@@ -5,7 +5,7 @@ import 'package:flutter_object_box/entities/todo.dart';
 
 class ToDoRepository extends ChangeNotifier {
   List<ToDo> _todos = [];
-  final List<ToDo> _swapTodos = [];
+
   late final ObjectBoxDatabase _database;
 
   ToDoRepository(this._database);

@@ -12,7 +12,11 @@ class App extends StatelessWidget {
       title: 'Database Demo',
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
-      theme: ThemeData(primarySwatch: colorSeed),
+      theme: ThemeData(
+          primarySwatch: colorSeed,
+          appBarTheme: Theme.of(context).appBarTheme.copyWith(
+                backgroundColor: Colors.black,
+              )),
       routes: Routes.list,
       initialRoute: Routes.initial,
       navigatorKey: Routes.navigatorKey,
