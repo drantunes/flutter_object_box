@@ -3,6 +3,7 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  local_auth_windows
   objectbox_flutter_libs
 )
 

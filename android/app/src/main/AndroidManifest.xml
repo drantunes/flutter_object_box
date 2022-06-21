@@ -1,6 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.flutter_object_box">
-   <application
+    
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <application
         android:label="flutter_object_box"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
@@ -31,4 +33,5 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
+    
 </manifest>

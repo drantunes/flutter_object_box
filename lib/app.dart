@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_object_box/routes/routes.dart';
 
 class App extends StatelessWidget {
-  final MaterialColor colorSeed = Colors.indigo;
+  final MaterialColor colorSeed = Colors.deepPurple;
 
   const App({Key? key}) : super(key: key);
 
@@ -13,12 +14,13 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
       theme: ThemeData(
-          primarySwatch: colorSeed,
-          appBarTheme: Theme.of(context).appBarTheme.copyWith(
-                backgroundColor: Colors.black,
-              )),
+        primarySwatch: colorSeed,
+        // appBarTheme: Theme.of(context).appBarTheme.copyWith(
+        //       backgroundColor: Colors.black,
+        //     ),
+      ),
       routes: Routes.list,
-      initialRoute: Routes.initial,
+      initialRoute: Routes.authCheck,
       navigatorKey: Routes.navigatorKey,
     );
   }
